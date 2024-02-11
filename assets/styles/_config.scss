@@ -1,0 +1,54 @@
+@font-face {
+	font-family: NameSansVF;
+	src: url("https://bravery.b-cdn.net/AT-NameSansVariable-Upright-subset.woff2")
+		format("woff2-variations");
+	font-weight: 1 1000;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial Adjusted';
+	src: local(Arial);
+	size-adjust: 93%;
+}
+html {
+	font-family: NameSansVF, 'Arial Adjusted';
+	scroll-behavior: smooth;
+}
+// CSS Variables
+:root {
+	--color-white: #fff;
+	--color-black: #150635;
+	--color-bright: #6b4de0;
+	--color-dark-neon: #FF2578;
+	--color-hilite: #FFF500;
+	--color-orange: #FF5C00;
+	--color-blue: #5BCEFF;
+	--gradient-shout: linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
+	--font-family: NameSansVF, sans-serif;
+	--feature-simple-y: "ss12";
+
+    // Type Scale
+    --type-xs: clamp(0.7387rem, 0.9578rem + -0.2828vi, 0.8889rem);
+    --type-sm: clamp(0.9846rem, 1.0071rem + -0.0289vi, 1rem);
+    --type-rg: clamp(1.125rem, 1.039rem + 0.3529vi, 1.3125rem);
+    --type-md: clamp(1.2656rem, 1.0436rem + 0.9109vi, 1.7496rem);
+    --type-lg: clamp(1.4238rem, 1.0071rem + 1.7098vi, 2.3322rem);
+    --type-xl: clamp(1.6018rem, 0.9104rem + 2.8367vi, 3.1088rem);
+    --type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
+    --type-3xl: clamp(2.0273rem, 0.4229rem + 6.582vi, 5.524rem);
+
+	--global-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+	--wrapper: clamp(800px, 85vw, 96rem);
+}
+@keyframes gradientMove {
+	from {
+		background-position: 200% center;
+	}
+}
+@media (prefers-reduced-motion) {
+  html {
+	scroll-behavior: auto;
+  }
+}

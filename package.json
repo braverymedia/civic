@@ -1,0 +1,25 @@
+{
+	"name": "braverygov",
+	"version": "1.0.0",
+	"description": "Bravery for Government",
+	"scripts": {
+		"clean": "rm -rf _site && rm -rf .cache",
+		"build:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy",
+		"start": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+		"debug:start": "DEBUG=Eleventy* pnpm start",
+		"build": "NODE_ENV=production pnpm run build:eleventy",
+		"debug:build": "DEBUG=Eleventy* pnpm run build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"browserslist": "^4.22.3",
+		"dotenv": "^16.4.1",
+		"lightningcss": "^1.23.0",
+		"sass": "^1.70.0",
+		"terser": "^5.27.0",
+		"urllib": "^3.22.2"
+	}
+}

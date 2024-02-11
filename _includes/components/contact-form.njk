@@ -1,0 +1,10 @@
+    <form name="gov-contact" method="POST" netlify-honeypot="bot-field"  data-netlify="true" id="braverygov-contact">
+        <fieldset>
+            <label>Name<span>*</span> <input name="name" class="name" required autocomplete="name"> </label>
+            <label>Agency<span>*</span> <input name="agency" class="agency" required autocomplete="organization"> </label>
+            <label>Email<span>*</span> <input type="email" name="email" class="email" required autocomplete="email"> </label>
+            <label>Message<span>*</span><textarea name="message" class="message" rows="6" cols="33" required></textarea></label>
+            <label class="honey">Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </fieldset>
+        <button type="submit" class="button bright">Inquire</button>
+    </form>

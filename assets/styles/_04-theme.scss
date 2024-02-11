@@ -1,0 +1,47 @@
+html {
+    background-color: var(--color-black);
+    background-image: linear-gradient(158deg, rgba(43, 132, 144, 0.20) 39.26%, rgba(79, 187, 227, 0.00) 81.5%);
+    background-attachment: fixed;
+    color: var(--color-white);
+}
+.button,
+button {
+    appearance: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 16px 32px;
+	color: var(--color-white);
+	width: 100%;
+    margin-block: 0;
+	border: 1px solid var(--color-hilite);
+	border-radius: 4px;
+	transition: var(--global-transition);
+	font-family: inherit;
+	cursor: pointer;
+	font-variation-settings: "opsz" 24;
+	font-weight: 600;
+	position: relative;
+    font-size: var(--type-sm);
+    text-decoration: none;
+    flex: 0 1;
+	svg {
+		height: 16px;
+		width: 16px;
+		color: var(--color-hilite);
+	}
+    &.bright {
+        background: var(--color-hilite);
+        color: var(--color-black);
+        &:hover,
+        &:active {
+            background: var(--color-blue);
+			border-color: var(--color-blue);
+        }
+    }
+}
+.masthead,
+a:hover {
+    color: var(--color-hilite);
+}

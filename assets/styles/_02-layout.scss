@@ -1,0 +1,59 @@
+body {
+    padding: 2.5vh 5vw;
+}
+.brand > svg {
+    height: auto;
+    width: clamp(145px, 25vw, 190px);
+}
+.masthead {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding-block: 5vh;
+    @media (min-width: 1140px) {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-template-rows: auto auto;
+        row-gap: 64px;
+        align-items: start;
+        padding-block-start: 10vh;
+        header {
+            grid-row: 1;
+            grid-column: 1 / end;
+        }
+        article {
+            padding-inline-end: 64px;
+            border-inline-end: 1px solid var(--color-dark-neon);
+        }
+    }
+}
+#inquire {
+    border-block-start: 4px solid var(--color-dark-neon);
+    margin-block-start: 4vh;
+    padding-block-start: 8vh;
+    @media (min-width: 1140px) {
+        padding: 0 0 0 64px;
+        margin: 0;
+        border: 0;
+        position: sticky;
+        top: 25dvh;
+    }
+}
+footer {
+    font-size: var(--type-sm);
+    @media (min-width:1024px) {
+        display: flex;
+        gap: 16px;
+    }
+}
+.legal-links {
+    display: flex;
+    gap: 16px;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html {% if section %}class="layout-{{ section }}" {% endif %}lang="en">
+
+    <head>
+        {% include "components/_head.njk" %}
+    </head>
+    <body>
+        <header class="masthead">
+            <div class="brand">{% include "svg/bravery.svg" %}</div>
+            <a class="button outline" href="#inquire">{% include 'svg/message.svg' %} Inquire</a>
+        </header>
+        <main>
+            <header>
+                <h1>Empowering Government Workforces Through Specialized Training in Technology, CX, and Human-Centered Design</h1>
+            </header>
+            <article>
+                <p>At <span class="brand">Bravery Media</span>, we understand the unique challenges and opportunities within government sectors at federal, state, and local levels. Our mission is to equip government employees with cutting-edge skills in technical, CX, and Human-Centered Design (HCD) disciplines, enabling teams to innovate, operate more efficiently, and deliver impactful services to the public.</p>
+                <h2>Why Choose <span class="brand">Bravery</span> Media?</h2>
+                <p><strong>Expert-Led Training:</strong> Our workshops are designed and delivered by industry experts with extensive experience in their respective fields.</p>
+                <p><strong>Tailored For Government:</strong> Each workshop is crafted with government employees in mind, focusing on scenarios, challenges, and objectives specific to the public sector.</p>
+                <p><strong>Outcome-Focused:</strong> Our training is not just about imparting knowledge; it's about achieving tangible improvements in efficiency, innovation, and service delivery within government agencies.</p>
+                <h2>Our Training Programs</h2>
+                <p>Bravery's training programs are customized to your team's specific needs and we are always ready to develop a new workshop to suit your needs. We currently offer training for:</p>
+                <ul>
+                    <li>Figma for CX</li>
+                    <li>Collaborative tools like Mural, Miro, and FigJam</li>
+                    <li>Content Strategy</li>
+                    <li>Conducting usability research</li>
+                    <li>Auditing Web Applications</li>
+                </ul>
+            </article>
+            <section id="inquire">
+                <h2>Inquire about training</h2>
+                {% include "components/contact-form.njk" %}
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy; {% year %} <span class="brand">Bravery Media</span>. All Rights Reserved.</p>
+            <p class="legal-links"><a href="https://bravery.co/privacy-policy/">Privacy Policy</a> <a href="https://bravery.co/terms/">Terms of Service</a></p>
+        </footer>
+        <!-- capture the JS content as a Nunjucks variable -->
+        {% set js %}
+        {% include "assets/js/script.js" %}
+        {% endset %}
+        <!-- feed it through our jsmin filter to minify -->
+        <script>{{ js | jsmin | safe }}</script>
+    </body>
+</html>
