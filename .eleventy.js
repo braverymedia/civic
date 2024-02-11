@@ -3,6 +3,7 @@ const sass = require("sass");
 const { minify } = require("terser");
 const browserslist = require("browserslist");
 const { transform, browserslistToTargets, Features } = require("lightningcss");
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
 	// Simple year shortcode
@@ -55,7 +56,13 @@ module.exports = function (eleventyConfig) {
 			}
 		}
 	);
+	const md = new markdownIt({
+		html: true,
+	});
 
+	eleventyConfig.addPairedShortcode("markdown", (content) => {
+		return md.render(content);
+	});
 	eleventyConfig.addWatchTarget("./assets/styles");
 	eleventyConfig.addPassthroughCopy("./assets/img");
 	eleventyConfig.addPassthroughCopy("favicon.svg");

@@ -1,6 +1,7 @@
 
 body {
 	font-size: var(--type-rg);
+	font-weight: 350;
 }
 h1,
 h2,
@@ -14,11 +15,15 @@ h5 {
 }
 
 h1 {
-	font-size: var(--type-2xl);
+	font-size: var(--type-xl);
+	max-width: 1001px;
 }
 
 h2 {
-	font-size: var(--type-xl);
+	font-size: var(--type-lg);
+	#inquire & {
+		font-size: var(--type-xl);
+	}
 }
 
 h3 {

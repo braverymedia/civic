@@ -39,11 +39,11 @@ main {
     margin-block-start: 4vh;
     padding-block-start: 8vh;
     @media (min-width: 1140px) {
-        padding: 0 0 0 64px;
+        padding: 40px 0 0 64px;
         margin: 0;
         border: 0;
         position: sticky;
-        top: 25dvh;
+        top: calc( 25dvh - 40px);
     }
 }
 footer {

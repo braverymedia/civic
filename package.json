@@ -18,6 +18,7 @@
 		"browserslist": "^4.22.3",
 		"dotenv": "^16.4.1",
 		"lightningcss": "^1.23.0",
+		"markdown-it": "^14.0.0",
 		"sass": "^1.70.0",
 		"terser": "^5.27.0",
 		"urllib": "^3.22.2"
