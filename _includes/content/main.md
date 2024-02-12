@@ -12,10 +12,12 @@ At <span class="brand">Bravery Media</span>, we understand the unique challenges
 
 ## Our Training Programs
 
-Bravery's training programs are customized to your team's specific needs and we are always ready to develop a new workshop to suit your needs. We currently offer training for:
+Bravery's training programs are customized to your team's specific needs and we are always ready to develop a new workshop to suit your needs. We currently offer training on a variety of topics:
 
 - Figma for CX
 - Collaborative tools like Mural, Miro, and FigJam
-- Content Strategy
-- Conducting usability research
-- Auditing Web Applications
+- Content Strategy Principles
+- CX and Usability Research Methodology
+- How to conduct website audits
+
+Is there something else you have in mind? We'll develop something custom for your team.
